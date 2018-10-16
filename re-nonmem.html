@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 70px;
+            padding-left: 70px;
+            width: 90%;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+
+        /* Add a gray color to all navbar links */
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #d5d5d5 !important;
+        }
+
+        /* On hover, the links will turn white */
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+
+        /* The active link */
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        /* Remove border color from the collapsible button */
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        /* Dropdown */
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+
+        /* Dropdown links */
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+
+        /* On hover, the dropdown links will turn red */
+        .dropdown-menu li a:hover {
+            background-color: gray !important;
+        }
+
+        .thumbnail {
+            padding: 0 0 0px 0;
+            border: none;
+            border-radius: 0;
+            width: 100%;
+
+        }
+
+        .thumbnail p {
+            margin-top: 5px;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            border: 1px solid #333;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .modal-header,
+        h4,
+        .close {
+            background-color: #333;
+            color: #fff !important;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .modal-header,
+        .modal-body {
+            padding: 40px 50px;
+        }
+
+        /* Set gray background color and 100% height */
+        .row.content {
+            height: 550px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            background-color: #f1f1f1;
+            position: relative;
+            height: 100%;
+        }
+
+        .form-group {
+            width: 25%;
+        }
+
+        .btn {
+            margin-left: 1%;
+        }
+    </style>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index-nonmem.html">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="History-nonmem-br.html">History<span class="glyphicon glyphicon-calendar"></span></a></li>
+                <li><a href="view-br.html">Borrow<span class="glyphicon glyphicon-book"></span></a></li>
+                <li><a href="re-nonmem.html">Return<span class="glyphicon glyphicon-repeat"></span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="Studen-info-nonmem.html"><span class="glyphicon glyphicon-user"></span>Student name</a></li>
+                <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+                <li><a href="cart-nonmem.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <br> <br>
+    <div class="container">
+        <h1>Return</h1>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Items ID</th>
+                    <th>Items name</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""></label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>
+                        <div class="form-group">
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""></label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <a href="index-nonmem.html"><button id="submit" name="submit" class="btn btn-warning pull-right">Cancel</button></a>
+        <a href="History-nonmem-br.html"><button id="submit" name="submit" class="btn btn-success pull-right">Return</button></a>
+
+
+
+</body>
+
+</html>

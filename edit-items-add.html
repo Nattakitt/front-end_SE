@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Bootstrap Theme The Band</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-right: 70px;
+            padding-left: 70px;
+            width: 90%;
+        }
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 11px !important;
+            letter-spacing: 4px;
+            opacity: 0.9;
+        }
+
+        /* Add a gray color to all navbar links */
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: #d5d5d5 !important;
+        }
+
+        /* On hover, the links will turn white */
+        .navbar-nav li a:hover {
+            color: #fff !important;
+        }
+
+        /* The active link */
+        .navbar-nav li.active a {
+            color: #fff !important;
+            background-color: #29292c !important;
+        }
+
+        /* Remove border color from the collapsible button */
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+        }
+
+        /* Dropdown */
+        .open .dropdown-toggle {
+            color: #fff;
+            background-color: #555 !important;
+        }
+
+        /* Dropdown links */
+        .dropdown-menu li a {
+            color: #000 !important;
+        }
+
+        /* On hover, the dropdown links will turn red */
+        .dropdown-menu li a:hover {
+            background-color: gray !important;
+        }
+
+        .thumbnail {
+            padding: 0 0 0px 0;
+            border: none;
+            border-radius: 0;
+            width: 100%;
+
+        }
+
+        .thumbnail p {
+            margin-top: 5px;
+            color: #555;
+            font-size: 15px;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            border: 1px solid #333;
+            background-color: #fff;
+            color: #000;
+        }
+
+        .modal-header,
+        h4,
+        .close {
+            background-color: #333;
+            color: #fff !important;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .modal-header,
+        .modal-body {
+            padding: 40px 50px;
+        }
+
+        /* Set gray background color and 100% height */
+        .row.content {
+            height: 550px
+        }
+
+        /* Set gray background color and 100% height */
+        .sidenav {
+            background-color: #f1f1f1;
+            position: relative;
+            height: 100%;
+        }
+
+        .btn-block {
+            padding: 7px 20px;
+            background-color: #333;
+            color: #f1f1f1;
+            border-radius: 0;
+            transition: .2s;
+
+        }
+        /* On small screens, set height to 'auto' for the grid */
+    </style>
+</head>
+
+<body>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index-mem.html">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">History
+                            <span class="glyphicon glyphicon-calendar"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="History-mem-br.html">My history</a></li>
+                            <li><a href="History-all-br.html">All history</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Approve
+                            <span class="glyphicon glyphicon-check"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="app-borrow.html">Borrow</a></li>
+                            <li><a href="app-return.html">Return</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Edit items
+                            <span class="glyphicon glyphicon-list-alt"></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="edit-items-add.html">Add</a></li>
+                            <li><a href="edit-items-del.html">Delete</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="allstd.html">Student info<span class="glyphicon glyphicon-info-sign"></span></a></li>
+    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="Studen-info-mem.html"><span class="glyphicon glyphicon-user"></span>Studentname</a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span>Log out</a></li>
+                    <li><a href="cart-mem.html"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+
+    <!------ Include the above in your HEAD tag ---------->
+    <div class="container">
+        <div class="row">
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>
+                        <h1> Add Items</h1>
+                    </legend>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Name">Select Type</label>
+                        <div class="col-md-5">
+                            <label class="radio-inline"><input type="radio" name="optradio">ID</label>
+                            <label class="radio-inline"><input type="radio" name="optradio">Non ID</label>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Name">Items Name</label>
+                        <div class="col-md-5">
+                            <input id="Name" name="Name" type="text" placeholder="Items Name" class="form-control input-md" required="">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Name">Items ID</label>
+                        <div class="col-md-5">
+                            <input id="Name" name="Name" type="text" placeholder="Items ID" class="form-control input-md" required="">
+                        </div>
+                    </div>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="mobilenumber">Category</label>
+                        <div class="col-md-5">
+                            <select class="form-control" id="sel1">
+                                <option>General</option>
+                                <option>Network Devices</option>
+                                <option>Stationary</option>
+                                <option>Kitchenware</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="mobilenumber">Quantity</label>
+                        <div class="col-sm-1">
+                            <select class="form-control" id="sel1">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="Name">Duration limit</label>
+                        <div class="col-sm-1">
+                            <p>Week:</p>
+                            <input id="Name" name="Name" type="text" class="form-control input-md" required="">
+                        </div>
+                        <div class="col-sm-1">
+                                <p>Day:</p>
+                                <input id="Name" name="Name" type="text" class="form-control input-md" required="">
+                            </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="address">Detail</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="Detail" name="Detail">default text</textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit">Image</label>
+                            <div class="col-md-4">
+                                <button id="submit" name="submit" class="btn btn-info">Upload</button>
+                            </div>
+                        </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="submit"></label>
+                        <div class="col-md-4 pull-right">
+                            <a href="edit-items-add.html"><button id="submit" name="submit" class="btn btn-success ">Add</button></a>
+                            <a href="edit-items-add.html"> <button id="submit" name="submit" class="btn btn-warning ">Cancel</button></a>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
